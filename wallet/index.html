@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Cryptounit">
+	<meta name="viewport" content="width=device-width">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<title>Cryptounit</title>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="stylesheet" href="../css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="../css/jquery.formstyler.css">
+
+	<link rel="stylesheet" href="../css/app.min.css?a1">
+
+	<script src="../js/jquery.min.js"></script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W4GN338');</script>
+<!-- End Google Tag Manager -->
+</head>
+
+<body>
+
+	<header class="header header--transparent">
+		<a class="logo">
+			<img src="../images/dest/logo.svg" alt="Cryptounit">
+		</a>
+		<div class="menu">
+			<nav class="links">
+				<a href="https://github.com/Stanum-CryptoUnit" class="link">About the project</a>
+				<a href="#" class="link">Ecosystem</a>
+				<a href="http://explore.cryptounit.cc" class="link">Blockchain</a>
+				<a href="#" class="link">Tokenomics</a>
+				<a href="/wallet" class="link link--current">Wallet</a>
+				<a href="#" class="link">Stock market</a>
+				<!-- <a href="ROADMAP-rus.pdf" class="link" download="Roadmap">Roadmap</a> -->
+				<a href="javascript:void(0);" onclick="$.scrollify.move('#7');" class="link">Team</a>
+				<a href="#" class="link">WhitePaper</a>
+			</nav>
+			<div class="account">
+				<a href="https://explorer.cryptounit.cc/" target="_blank" class="button button--signup modalshow" type="button">Sign up</a>
+				<a href="https://explorer.cryptounit.cc/" target="_blank" class="button button--login modalshow" type="button">Log in</a>
+			</div>
+		</div>
+		<div class="toggle">
+			<button class="button" type="button">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</header>
+
+	<main class="err404">
+		<section class="section section--404">
+			<h1 class="section__header">Wallet</h1>
+			<p class="section__title">Coming soon</p>
+		</section>
+	</main>
+	
+	<div class="footer">
+		<div>
+			<p class="text">© 2020</p>
+			<a href="mailto:info@cryptounit.cc" class="text link">info@cryptounit.cc</a>
+			<a href="#" class="text link">Privacy Policy</a>
+		</div>
+		<div>
+			<a href="#" class="text link">Cookies</a>
+			<a href="#" class="text link">Private policy</a>
+			<a href="#" class="text link">Saft simple agreement for token sale</a>
+		</div>
+	</div>
+
+	<aside class="links">
+		<a href="#" class="link link--fb">facebook</a>
+		<a href="#" class="link link--tw">twitter</a>
+		<a href="#" class="link link--blog">blog</a>
+	</aside>
+
+	<div style="display: none;">
+		<div id="modal_login" class="modal__cont">
+			<div class="modal__inner">
+				<button class="button modal__close" data-fancybox-close>
+					<svg id="close" viewBox="0 0 27 27" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6.707 7.322l12.91 12.91M6.707 20.233l12.91-12.911" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</button>
+				<div class="modal__title">Log in</div>
+				<form action="#" class="mform form_login">
+					<input type="text" name="email" value="" placeholder="mymail@mail.com" class="mform__input" autofocus>
+					<input type="password" name="password" value="" placeholder="password" class="mform__input">
+					<div class="mbtn__cont">
+						<button class="mbtn mbtn--main" type="submit">
+							<span>Log in</span>
+						</button>
+						<a href="#modal_sign" class="mbtn mbtn__light modalshow">
+							<span>Sign up</span>
+						</a>
+					</div>
+					<div class="mforgot">
+						<a href="#">Forgot password?</a>
+					</div>
+					<input type="hidden" name="form" value="LOG IN">
+				</form>
+			</div>
+		</div>
+
+		<div id="modal_sign" class="modal__cont">
+			<div class="modal__inner">
+				<button class="button modal__close" data-fancybox-close>
+					<svg id="close" viewBox="0 0 27 27" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6.707 7.322l12.91 12.91M6.707 20.233l12.91-12.911" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</button>
+				<div class="modal__title">Register</div>
+				<form action="#" class="mform form_sign">
+					<ul class="mtabs">
+						<li><a href="#mtab-phone" class="active">Phone</a></li>
+						<li><a href="#mtab-email">Email</a></li>
+					</ul>
+					<div class="mtabs__cont">
+						<div id="mtab-phone" class="mtabs__pane active">
+							<input type="tel" name="phone" value="" placeholder="PHONE" class="mform__input">
+						</div>
+						<div id="mtab-email" class="mtabs__pane">
+							<select name="country" class="mform__select">
+								<option value="china" class="lang-ch">China</option>
+								<option value="korea" class="lang-korea">Korea</option>
+								<option value="uk" class="lang-uk">UK</option>
+								<option value="canada" class="lang-canada">Canada</option>
+								<option value="china2" class="lang-ch">China2</option>
+								<option value="korea2" class="lang-korea">Korea2</option>
+								<option value="uk2" class="lang-uk">UK2</option>
+								<option value="canada2" class="lang-canada">Canada2</option>
+							</select>
+						</div>
+					</div>
+					<input type="text" name="email" value="" placeholder="email" class="mform__input">
+					<input type="password" name="password" value="" placeholder="password" class="mform__input">
+					<input type="password" name="confirm" value="" placeholder="confirm password" class="mform__input">
+					<label class="mform__agree">
+						<input type="checkbox" value="agreement" checked>
+						<span>I agree to the <a href="#">user agreement</a></span>
+					</label>
+					<div class="mbtn__cont">
+						<button class="mbtn mbtn--main" type="submit">
+							<span>Register</span>
+						</button>
+						<a href="#modal_login" class="mbtn mbtn__light modalshow">
+							<span>Log in</span>
+						</a>
+					</div>
+					<div class="mforgot">
+						<a href="#">Forgot password?</a>
+					</div>
+					<input type="hidden" name="form" value="SIGN IN">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/jquery.scrollify.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/app.min.js"></script>
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4GN338"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</body>
+</html>
