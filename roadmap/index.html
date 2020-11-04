@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="../css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="../css/jquery.formstyler.css">
 
+	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" href="../css/app.min.css?a1">
 
 	<script src="../js/jquery.min.js"></script>
@@ -33,24 +34,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <body>
 
 	<header class="header header--transparent">
-		<a class="logo">
+		<a href="/" class="logo">
 			<img src="../images/dest/logo.svg" alt="Cryptounit">
 		</a>
 		<div class="menu">
 			<nav class="links">
-				<a href="https://github.com/Stanum-CryptoUnit" class="link">About the project</a>
+				<a href="https://github.com/Stanum-CryptoUnit" class="link link--current" target="_blank">About the project</a>
 				<a href="#" class="link">Ecosystem</a>
-				<a href="http://explore.cryptounit.cc" class="link">Blockchain</a>
-				<a href="#" class="link">Tokenomics</a>
-				<a href="/wallet" class="link link--current">Wallet</a>
-				<a href="#" class="link">Stock market</a>
+				<a href="http://explorer.cryptounit.cc" class="link" target="_blank">Blockchain</a>
+				<a href="/assets/1-Tokenomics-29092020.pdf" class="link">Tokenomics</a>
+				<a href="https://cryptounit.cc/wallet/auth" class="link" target="_blank">Wallet</a>
+				<a href="http://ugpay.group" class="link" target="_blank">Where to buy</a>
 				<!-- <a href="ROADMAP-rus.pdf" class="link" download="Roadmap">Roadmap</a> -->
 				<a href="javascript:void(0);" onclick="$.scrollify.move('#7');" class="link">Team</a>
 				<a href="#" class="link">WhitePaper</a>
 			</nav>
 			<div class="account">
-				<a href="https://explorer.cryptounit.cc/" target="_blank" class="button button--signup modalshow" type="button">Sign up</a>
-				<a href="https://explorer.cryptounit.cc/" target="_blank" class="button button--login modalshow" type="button">Log in</a>
+				<a href="http://ugpay.group" target="_blank" class="button button--signup " type="button">Sign up</a>
+				<a href="https://cryptounit.cc/wallet/auth" target="_blank" class="button button--login " type="button">Log in</a>
 			</div>
 		</div>
 		<div class="toggle">
@@ -62,11 +63,243 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div>
 	</header>
 
-	<main class="err404">
-		<section class="section section--404">
-			<h1 class="section__header">Roadmap</h1>
-			<p class="section__title">Coming soon</p>
+	<main class="roadmap">
+		<section class="section section--roadmap">
+			<h1 class="section__header">CRYPTOUNIT<br>ЭТАПЫ ВЫПОЛНЕНИЯ</h1>
 		</section>
+
+		<section class="section" id="timeline-wrapper">
+			<div class="container-fluid">
+			<div class="row">
+				
+				<div class="timeline-block">
+				<div class="timeline-events">
+					<div class="event l-event col-md-6 col-sm-6">
+						<div class="event-body">
+							<div class="event-content">
+								<h5 class="text-left">Июль 2020</h5>
+								<ul class="bullets">
+									<li>Создание и наполнение сайта cryptounit.cc</li>
+									<li>Регистрация токена секьюрити в SEC</li>
+								</ul>
+							</div>
+						</div> <!-- end of event body -->
+						<div class="clear-fix"></div>
+					</div><!-- end of left event -->
+					<div class="row"></div>
+					<div class="event r-event col-md-6 col-sm-6">
+						<div class="helper">
+							<div class="event-body">
+								<div class="event-content">
+									<h5 class="text-left">Август 2020</h5>
+									<ul class="bullets">
+										<li>Создание крипто-кошелька для токенов 
+CRU, UNTB, USDU</li>
+										<li>Публикация инструкции для пользования 
+крипто-кошельком и стейкингом</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						</div><!-- end of right event <-->
+						<div class="clearfix"></div>
+						</-->
+					<div class="row"></div>
+					<div class="event l-event col-md-6 col-sm-6">
+						<div class="helper">
+							<div class="event-body">
+								<div class="person-image pull-left "></div>
+									<div class="event-content">
+										<h5 class="text-left">Сентябрь 2020</h5>
+										<ul class="bullets">
+											<li>Старт эмиссии токенов UNTB</li>
+											<li>Заключение договора с 
+кастодиан-банком для обмена USDU на 
+фиатные валюты</li>
+											<li>Обучение партнеров основам трейдинга 
+на крипто-бирже</li>
+											<li>Листинг токенов CRU, UNTB, USDU на 
+внешней бирже</li>
+										</ul>
+									</div>
+								</div>
+							</div><!-- end of left event <-->
+						</div>
+						<div class="clearfix"></div>
+					
+					<div class="row"></div>
+					<div class="event r-event col-md-6 col-sm-6">
+						<div class="helper">
+							<div class="event-body">
+								<div class="event-content">
+									<h5 class="text-left">Октябрь 2020</h5>
+									<ul class="bullets">
+										<li>Подготовка документации для оценки 
+активов портфеля токена секьюрити</li>
+										<li>Публикация меморандума о размещении 
+токенов секьюрити (private placement 
+memorandum)</li>
+										<li>Участие в блокчейн конференции 
+DigitalSummit2020, публикации в СМИ</li>
+										<li>Начало работ по созданию международного брокерского холдинга с созданием Приложения для торговли на фондовых, валютных и криптовалютных площадках, как для инвесторов, так и для трейдеров</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- end of right event <-->
+					<div class="clearfix"></div>
+					</--><div class="row"></div>
+					<div class="event l-event col-md-6 col-sm-6">
+						<div class="helper">
+							<div class="event-body">
+								<div class="person-image pull-left "></div>
+									<div class="event-content">
+										<h5 class="text-left">Ноябрь 2020</h5>
+										<ul class="bullets">
+											<li>Функционал для начисления бонусов в токенах USDU на крипто-кошельках и на внешней бирже</li>
+											<li>Разработка приложения - мультивалютный крипто-фиатный кошелек</li>
+										</ul>
+									</div>
+								</div>
+							</div><!-- end of left event <-->
+						</div>
+					<div class="clearfix"></div>
+					
+					<div class="row"></div>
+					<div class="event r-event col-md-6 col-sm-6">
+						<div class="helper">
+							<div class="event-body">
+								<div class="event-content">
+									<h5 class="text-left">Декабрь 2020</h5>
+									<ul class="bullets">
+										<li>Регистрация токенов блокчейна CRYPTOUNIT на coinmarketcap</li>
+										<li>Создание токенов для проектов U-Gain, Urals Gold, Bazalt</li>
+										<li>Интеграция оплаты токенами USDU с другими проектами</li>
+										<li>P2P обменник для токенов блокчейна CRYPTOUNIT</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- end of right event <-->
+					<div class="clearfix"></div>
+					</--><div class="row"></div>
+					<div class="event l-event col-md-6 col-sm-6">
+						<div class="helper">
+							<div class=" event-body">
+								<div class="person-image pull-left "></div>
+									<div class="event-content">
+										<h5 class="text-left">Январь 2021</h5>
+										<ul class="bullets">
+											<li>Обучение партнеров по созданию ноды блокчейна CRYPTOUNIT</li>
+											<li>Публикации в СМИ об итогах работы за 2020 год</li>
+											<li>Анализ мирового рынка токенов секьюрити и разработка стратегии на 10 лет</li>
+										</ul>
+									</div>
+								</div>
+							</div><!-- end of left event <-->
+						</div>
+					<div class="clearfix"></div>
+
+					<div class="row"></div>
+					<div class="event r-event col-md-6 col-sm-6">
+						<div class="helper">
+							<div class="event-body">
+								<div class="event-content">
+									<h5 class="text-left">Февраль 2021</h5>
+									<ul class="bullets">
+										<li>Создание токена для проекта DataMining</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- end of right event <-->
+					<div class="clearfix"></div>
+					</--><div class="row"></div>
+					<div class="event l-event col-md-6 col-sm-6">
+						<div class="helper">
+							<div class=" event-body">
+								<div class="person-image pull-left "></div>
+									<div class="event-content">
+										<h5 class="text-left">Март 2021</h5>
+										<ul class="bullets">
+											<li>Создание платформы для социальной сети DataMining</li>
+										</ul>
+									</div>
+								</div>
+							</div><!-- end of left event <-->
+						</div>
+					<div class="clearfix"></div>
+					
+					<div class="row"></div>
+					<div class="event r-event col-md-6 col-sm-6">
+						<div class="helper">
+							<div class="event-body">
+								<div class="event-content">
+									<h5 class="text-left">Апрель 2021</h5>
+									<ul class="bullets">
+										<li>Развитие платформы для выпуска токенов секьюрити партнерских проектов</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- end of right event <-->
+					<div class="clearfix"></div>
+					</--><div class="row"></div>
+					<div class="event l-event col-md-6 col-sm-6">
+						<div class="helper">
+							<div class=" event-body">
+								<div class="person-image pull-left "></div>
+									<div class="event-content">
+										<h5 class="text-left">Май 2021</h5>
+										<ul class="bullets">
+											<li>Конструктор создания сообществ на блокчейне CryptoUnit</li>
+											<li>Запуск Инвестиционого и Брокерского Холдинга</li>
+										</ul>
+									</div>
+								</div>
+							</div><!-- end of left event <-->
+						</div>
+					<div class="clearfix"></div>
+					
+					<div class="row"></div>
+					<div class="event r-event col-md-6 col-sm-6">
+						<div class="helper">
+							<div class="event-body">
+								<div class="event-content">
+									<h5 class="text-left">Июнь 2021</h5>
+									<ul class="bullets">
+										<li>Создание медиа-платформы с вознаграждениями в токенах блокчейна CryptoUnit</li>
+										<li>Запуск Инвестиционого и Брокерского Холдинга</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- end of right event <-->
+					<div class="clearfix"></div>
+					</--><div class="row"></div>
+					<div class="event l-event col-md-6 col-sm-6">
+						<div class="helper">
+							<div class=" event-body">
+								<div class="person-image pull-left "></div>
+									<div class="event-content">
+										<h5 class="text-left">Июль 2021</h5>
+										<ul class="bullets">
+											<li>Разработка холодного кошелька-флешки для токенов блокчейна CRYPTOUNIT</li>
+											<li>Запуск Инвестиционого и Брокерского Холдинга</li>
+										</ul>
+									</div>
+								</div>
+							</div><!-- end of left event <-->
+						</div>
+					<div class="clearfix"></div>
+					
+				</div><!-- end of timeline events -->
+				<div class="clearfix"></div>
+				</div>
+			</div>
+			</div>
+		</section>
+
 	</main>
 	
 	<div class="footer">
@@ -170,10 +403,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div>
 	</div>
 
-	<script src="js/jquery.formstyler.min.js"></script>
-	<script src="js/jquery.scrollify.js"></script>
-	<script src="js/jquery.fancybox.min.js"></script>
-	<script src="js/app.min.js"></script>
+	<script src="../js/jquery.formstyler.min.js"></script>
+	<script src="../js/jquery.scrollify.js"></script>
+	<script src="../js/jquery.fancybox.min.js"></script>
+	<script src="../js/app.min.js"></script>
 
 
 <!-- Google Tag Manager (noscript) -->

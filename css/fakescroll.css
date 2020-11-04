@@ -1,0 +1,64 @@
+.fakeScroll__scope{ overflow:visible !important; }
+
+.fakeScroll__wrap{
+    overflow : hidden;
+    height   : 100%;
+    position : relative;
+    z-index  : 1;
+}
+
+.fakeScroll__content{
+    height          : 100%;
+    width           : 100%;
+    padding         : 0 0 0 .375rem;
+    position        : relative;
+    right           : -1.275rem;
+    overflow        : auto;
+    -moz-box-sizing : border-box;
+    box-sizing      : border-box;
+}
+
+.fakeScroll__track{
+    position : absolute;
+    right    : 1.125rem;
+    top      : .25rem;
+    bottom   : 1rem;
+    width    : 4px;
+    border-radius : 2px;
+    cursor   : default;
+    z-index: 9999;
+    /*background: #c0990e;*/
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.fakeScroll__bar{
+    z-index: 9999;
+    position      : relative;
+    background    : rgb(211 183 86); /*rgba(255,255,255, .3); */
+    width         : 100%;
+    border-radius : 4px;
+    right         : 0;
+    top           : 0;
+    z-index       : 0;
+    transition    : background 0.1s;
+    cursor        : -moz-grab;
+    cursor        : -webkit-grab;
+}
+
+.fakeScroll__bar:hover{
+    background    : rgba(255,255,255, .55);
+}
+
+.fakeScroll__bar.fakeScroll--grabbed{
+    cursor     : -moz-grabbing;
+    cursor     : -webkit-grabbing;
+    background : white;
+}
+
+body.fakeScroll--grabbed{
+    cursor              : -moz-grabbing;
+    cursor              : -webkit-grabbing;
+    -moz-user-select    : none;
+    -webkit-user-select : none;
+    user-select         : none;
+}

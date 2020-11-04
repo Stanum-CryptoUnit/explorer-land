@@ -16,6 +16,7 @@
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" href="css/fakescroll.css">
 
 	<link rel="stylesheet" href="css/app.min.css?a1">
 
@@ -33,24 +34,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <body>
 
 	<header class="header header--transparent">
-		<a class="logo">
+		<a href="/" class="logo">
 			<img src="images/dest/logo.svg" alt="Cryptounit">
 		</a>
 		<div class="menu">
 			<nav class="links">
-				<a href="https://github.com/Stanum-CryptoUnit" class="link link--current">About the project</a>
+				<a href="https://github.com/Stanum-CryptoUnit" class="link link--current" target="_blank">About the project</a>
 				<a href="#" class="link">Ecosystem</a>
-				<a href="http://explore.cryptounit.cc" class="link">Blockchain</a>
-				<a href="#" class="link">Tokenomics</a>
-				<a href="/wallet" class="link">Wallet</a>
-				<a href="#" class="link">Stock market</a>
+				<a href="http://explorer.cryptounit.cc" class="link" target="_blank">Blockchain</a>
+				<a href="/assets/1-Tokenomics-29092020.pdf" class="link">Tokenomics</a>
+				<a href="https://cryptounit.cc/wallet/auth" class="link" target="_blank">Wallet</a>
+				<a href="http://ugpay.group" class="link" target="_blank">Where to buy</a>
 				<!-- <a href="ROADMAP-rus.pdf" class="link" download="Roadmap">Roadmap</a> -->
-				<a href="javascript:void(0);" onclick="$.scrollify.move('#7');" class="link">Team</a>
-				<a href="#" class="link">WhitePaper</a>
+				<a href="javascript:void(0);" id="toTeam" class="link">Team</a>
+				<div class="wp_wrapper"><select name="wp_select" id="" class="language"><option value="WHITEPAPER">WhitePaper</option><option value="EN">EN</option><option value="RU">RU</option><option value="ES">ES</option><option value="IT">IT</option><option value="VI">VI</option><option value="HI">HI</option></select></div>
 			</nav>
 			<div class="account">
-				<a href="https://explorer.cryptounit.cc/" target="_blank" class="button button--signup modalshow" type="button">Sign up</a>
-				<a href="https://explorer.cryptounit.cc/" target="_blank" class="button button--login modalshow" type="button">Log in</a>
+				<a href="http://ugpay.group" target="_blank" class="button button--signup " type="button">Sign up</a>
+				<a href="https://cryptounit.cc/wallet/auth" target="_blank" class="button button--login " type="button">Log in</a>
 			</div>
 		</div>
 		<div class="toggle">
@@ -64,19 +65,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 	<main class="main">
 		<section class="section section--promo">
-			<h1 class="section__header hidden">About the&nbsp;project</h1>
-			<p class="section__title text text--xl">Discover how to&nbsp;become a&nbsp;co&#8209;owner of&nbsp;Global investment portfolio using the&nbsp;program <span>CRYPTOUNIT</span></p>
-			<p class="section__desc text text--md">Which works in&nbsp;all segments and&nbsp;sectors of&nbsp;investment market</p>
+			<h1 class="section__header hidden">About the project</h1>
+			<p class="section__title text">Discover how to become a <nobr>co-owner</nobr> of Global investment portfolio using the program CRYPTOUNIT</p>
+			<p class="section__desc text text--md">Which works in all segments and sectors of investment market</p>
 			<a href="https://explorer.cryptounit.cc/" target="_blank" class="button button--lg button--more modalshow">More details</a>
 			<div class="sectors">
 				<ul class="sectors__list">
 					<li class="item"><span>Education</span></li>
-					<li class="item"><span>Equity participation in&nbsp;businesses through co&#8209;ownership Sector</span></li>
-					<li class="item"><span>Innovation and&nbsp;transport development Sector</span></li>
+					<li class="item"><span>Equity participation in businesses through co&#8209;ownership Sector</span></li>
+					<li class="item"><span>Innovation and transport development Sector</span></li>
 					<li class="item"><span>Stock market</span></li>
 					<li class="item"><span>Cryptocurrency market</span></li>
 					<li class="item"><span>Estate sector</span></li>
-					<li class="item"><span>Agriculture and&nbsp;farming development sector</span></li>
+					<li class="item"><span>Agriculture and farming development sector</span></li>
 					<li class="item"><span>Science sector</span></li>
 					<li class="item"><span>Precious and semi&#8209;precious metals sector</span></li>
 					<li class="item"><span>Space development sector</span></li>
@@ -86,28 +87,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<li class="item"><span>Currency market</span></li>
 					<li class="item"><span>Insurance sector</span></li>
 					<li class="item"><span>IT development sector</span></li>
-					<li class="item"><span>Business, cooperative and&nbsp;social development sector</span></li>
+					<li class="item"><span>Business, cooperative and social development sector</span></li>
 					<li class="item"><span>Culture sector</span></li>
-					<li class="item"><span>Precious and&nbsp;semi&#8209;precious stones sector</span></li>
+					<li class="item"><span>Precious and semi&#8209;precious stones sector</span></li>
 					<li class="item"><span>Charity sector</span></li>
 				</ul>
 			</div>
 		</section>
 		<section class="section section--blockchain">
-			<h1 class="section__title text text--xl">CRYPTOUNIT<br>BLOCKCHAIN</h1>
-			<p class="section__desc text text--md">The CRYPTOUNIT blockchain operates on&nbsp;the&nbsp;EOS engine and&nbsp;uses a&nbsp;consensus algorithm called DPoS (Delegated Proof&#8209;of&#8209;Stake)</p>
+			<h1 class="section__title text">CRYPTOUNIT<br>BLOCKCHAIN</h1>
+			<p class="section__desc text text--md">The CRYPTOUNIT blockchain operates on the EOS engine and uses a consensus algorithm called DPoS (Delegated Proof&#8209;of&#8209;Stake)</p>
 			<div class="info info--blockchain">
 				<p class="text text--lg">Blockchain</p>
-				<p class="text text--md">The programming language used to&nbsp;deploy the&nbsp;client / node&nbsp;is&nbsp;C / C&nbsp;++</p>
+				<p class="text text--md">The programming language used to deploy the client / node is C / C ++</p>
 				<ul class="list">
-					<li class="list__item">Block generation time:<br><span>0.5&nbsp;seconds</span></li>
-					<li class="list__item">Block size:<br>up&nbsp;to&nbsp;<span>10,000 transactions</span></li>
-					<li class="list__item">There is <span>no&nbsp;commission</span> when<br>transferring a&nbsp;token</li>
+					<li class="list__item">Block generation time:<br><span>0.5 seconds</span></li>
+					<li class="list__item">Block size:<br>up to <span>10,000 transactions</span></li>
+					<li class="list__item">There is <span>no commission</span> when<br>transferring a token</li>
 				</ul>
 			</div>
 			<div class="info info--tokenomics">
 				<p class="text text--lg">Tokenomics</p>
-				<p class="text text--md">The native CRYPTOUNIT network token is&nbsp;called UNTB, which stands for&nbsp;UNIT TOKEN OF&nbsp;BLOCKCHAIN</p>
+				<p class="text text--md">The native CRYPTOUNIT network token is called UNTB, which stands for UNIT TOKEN OF BLOCKCHAIN</p>
 				<ul class="list">
 					<li class="list__item">Ticker: <span>UNTB</span></li>
 					<li class="list__item">Accuracy: <span>4 decimal</span> places</li>
@@ -116,31 +117,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			</div>
 		</section>
 		<section class="section section--benefits">
-			<h1 class="section__title text text--xl">BENEFITS FOR THE TOKENHOLDERS</h1>
+			<h1 class="section__title text">BENEFITS FOR THE TOKENHOLDERS</h1>
 			<div class="info">
-				<p class="text text--lg">Minimum investment amount of&nbsp;10&nbsp;USD</p>
-				<p class="text text--md">Unique opportunity to&nbsp;purchase shares of&nbsp;already existing assets in&nbsp;different segments of&nbsp;market</p>
+				<p class="text text--lg">Minimum investment amount of <span>10 USD</span></p>
+				<p class="text text--md">Unique opportunity to purchase shares of already existing assets in different segments of market</p>
 			</div>
 			<div class="info">
-				<p class="text text--lg">Total offering amount<br>is 10 billions USD</p>
+				<p class="text text--lg">Total offering amount<br>is <span>10 billions</span> USD</p>
 				<p class="text text--md">The Issuer intends to proceed with the offering for 10 years</p>
 			</div>
 			<div class="info">
-				<p class="text text--lg">8 till 35% of profit is&nbsp;planned for&nbsp;dividends</p>
-				<p class="text text--md">Token holders will vote to&nbsp;determine the percentage of&nbsp;profit payable on&nbsp;dividendsand explain the&nbsp;impact it&nbsp;can&nbsp;have.</p>
+				<p class="text text--lg"><span>8 till 35%</span> of profit is planned for dividends</p>
+				<p class="text text--md">Token holders will vote to determine the percentage of profit payable on dividendsand explain the impact it can have.</p>
 			</div>
-			<p class="assets text text--lg">Assets allocation is in&nbsp;the&nbsp;table&nbsp;below</p>
+			<p class="assets text text--lg">Assets allocation is in the table below</p>
 			<a href="https://explorer.cryptounit.cc/" target="_blank" class="button button--lg button--more modalshow">Open</a>
 		</section>
 		<section class="section section--program">
-			<h1 class="section__title text text--xl">CRYPTOUNIT<br>PROGRAM</h1>
-			<p class="section__desc text text--md">We can help millions of&nbsp;people around the&nbsp;world solve their problems in&nbsp;finance, investment, business, education, and&nbsp;help restore the&nbsp;global economy and&nbsp;get rid of&nbsp;social problems, insecurity, and&nbsp;fear</p>
+			<h1 class="section__title text">CRYPTOUNIT<br>PROGRAM</h1>
+			<p class="section__desc text text--md">We can help millions of people around the world solve their problems in finance, investment, business, education, and help restore the global economy and get rid of social problems, insecurity, and fear</p>
 			<div class="info">
-				<p class="text text--lg">Independent assessment of&nbsp;404.000.000$</p>
-				<p class="text text--md">The global Portfolio is&nbsp;currently estimated in&nbsp;four&nbsp;hundred and&nbsp;four&nbsp;million USD</p>
+				<p class="text text--lg">Independent assessment of 404.000.000$</p>
+				<p class="text text--md">The global Portfolio is currently estimated in four hundred and four million USD</p>
+				<a href="https://ugpay.group/" target="_blank" class="button button--sm">Take part in the project</a>
 			</div>
 			<div class="info portfolio">
-				<p class="text">CRYPTOUNIT<br>Global&nbsp;Investment<br>Portfolio</p>
+				<p class="text">CRYPTOUNIT<br>Global Investment<br>Portfolio</p>
 				<input class="portfolio__input hidden" type="radio" id="portfolio1" name="portfolio" value="portfolio1" checked>
 				<input class="portfolio__input hidden" type="radio" id="portfolio2" name="portfolio" value="portfolio2">
 				<input class="portfolio__input hidden" type="radio" id="portfolio3" name="portfolio" value="portfolio3">
@@ -148,8 +150,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<label class="portfolio__label portfolio__label--2" for="portfolio2">portfolio 2</label>
 				<label class="portfolio__label portfolio__label--3" for="portfolio3">portfolio 3</label>
 				<ul class="list list--1">
-					<li class="item"><span>Gold and&nbsp;Diamonds</span></li>
-					<li class="item"><span>Equity participation in&nbsp;businesses through co&#8209;ownership</span></li>
+					<li class="item"><span>Gold and Diamonds</span></li>
+					<li class="item"><span>Equity participation in businesses through co&#8209;ownership</span></li>
 					<li class="item"><span>Health and longevity development</span></li>
 					<li class="item"><span>Innovation and transport development</span></li>
 					<li class="item"><span>Banking</span></li>
@@ -177,10 +179,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			</div>
 		</section>
 		<section class="section section--tokens">
-			<h1 class="section__title text text--xl">TOKENS OF OUR BLOCKCHAIN</h1>
-			<p class="section__desc text text--md">UNTB (Utility) Unit Token of&nbsp;Blockchain</p>
+			<h1 class="section__title text">TOKENS OF OUR BLOCKCHAIN</h1>
+			<p class="section__desc text text--md">UNTB (Utility) Unit Token of Blockchain</p>
 			<div class="info">
-				<p class="text text--lg">Cryptounit Security token CRU 80&nbsp;000&nbsp;000&nbsp;000</p>
+				<p class="text text--lg">Cryptounit Security token WCRU 80&nbsp;000&nbsp;000&nbsp;000</p>
 			</div>
 			<div class="info">
 				<p class="text text--lg">Utility token UNTB 8&nbsp;123&nbsp;456&nbsp;789</p>
@@ -189,24 +191,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<p class="text text--lg">Stable coin USDU</p>
 			</div>
 			<div class="info info--areas">
-				<p class="section__title text text--xl">UNTB application areas</p>
+				<p class="section__title text">UNTB application areas</p>
 				<ul class="list">
-					<li class="list__item">Access to the <span>CPU+NET</span> of&nbsp;the&nbsp;blockchain</li>
-					<li class="list__item">Game token in&nbsp;<span>GameZone</span></li>
-					<li class="list__item"><span>CRU</span> stacking reward</li>
-					<li class="list__item">Blockchain token for&nbsp;producing new coins and&nbsp;<span>Security&nbsp;Tokens</span></li>
-					<li class="list__item">Exchange token as&nbsp;<span>BNB</span></li>
-					<li class="list__item">Token for rewards in&nbsp;<span>Data&nbsp;Mining</span></li>
+					<li class="list__item">Access to the <span>CPU+NET</span> of the blockchain</li>
+					<li class="list__item">Game token in <span>GameZone</span></li>
+					<li class="list__item"><span>WCRU</span> stacking reward</li>
+					<li class="list__item">Blockchain token for producing new coins and <span>Security Tokens</span></li>
+					<li class="list__item">Exchange  bonus <span>token</span></li>
+					<li class="list__item">Token for rewards in <span>Data Mining</span></li>
 				</ul>
 			</div>
 			<a href="https://explorer.cryptounit.cc/" target="_blank" class="button button--lg button--more modalshow">Buy token</a>
 			<div class="note">
-				<p class="text note__title">No commissions or&nbsp;intermediaries</p>
-				<p class="text">Open register of&nbsp;the&nbsp;number of&nbsp;users and&nbsp;token balances on&nbsp;wallets and&nbsp;in&nbsp;the&nbsp;stack</p>
+				<p class="text note__title">No commissions or intermediaries</p>
+				<p class="text">Open register of the number of users and token balances on wallets and in the stack</p>
 			</div>
 		</section>
 		<section class="section section--investments">
-			<h1 class="section__title text text--xl">OUR Initial INVESTMENTS</h1>
+			<h1 class="section__title text">OUR Initial INVESTMENTS</h1>
 			<div class="info">
 				<div class="desc">
 					<p class="text">Transport</p>
@@ -215,17 +217,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<p class="text">Stocks</p>
 				</div>
 				<div class="chart chart--mobile"><img src="images/dest/chart--mobile.svg" alt=""></div>
-				<button class="button button--md">WhitePaper</button>
+				<br>&nbsp;<br>
 				<p class="text text--lg">More details</p>
 				<p class="text text--md">View the GitHub Repository</p>
-				<button class="button button--sm">ENTER</button>
+				<button class="button button--sm" onclick="openInNewTab('https://github.com/Stanum-CryptoUnit');">ENTER</button>
 				<p class="text text--md">YellowPaper</p>
-				<button class="button button--sm">DOWNLOAD</button>
+				<button class="button button--sm" onclick="openInNewTab('https://cryptounit.app-fork.com/assets/1-Tokenomics-29092020.pdf');">DOWNLOAD</button>
 			</div>
 			<div class="chart chart--desktop"><img src="images/dest/chart--desktop.svg" alt=""></div>
 		</section>
 		<section class="section section--foundation">
-			<h1 class="section__title text text--xl">CRYPTOUNIT FOUNDATION</h1>
+			<h1 class="section__title text">CRYPTOUNIT FOUNDATION</h1>
 			<ul class="list">
 				<li class="person">
 					<div class="person__photo"><img src="images/dest/person__photo--1.png" alt="ANDREY KHOVRATOV"></div>
@@ -235,7 +237,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<li class="person">
 					<div class="person__photo"><img src="images/dest/person__photo--2.png" alt="ANTONENKO MARIA"></div>
 					<p class="text person__name">ANTONENKO MARIA</p>
-					<p class="text person__position">Head of blockchain technology implementation&nbsp;department</p>
+					<p class="text person__position">Head of blockchain technology implementation department</p>
 				</li>
 				<li class="person">
 					<div class="person__photo"><img src="images/dest/person__photo--3.png" alt="BEREKESHEVA AIGERIM"></div>
@@ -250,10 +252,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			</ul>
 		</section>
 		<section class="section section--contacts">
-			<h1 class="section__title text text--xl">CONTACTS</h1>
-			<button class="button button--md">Road Town, British Virgin Islands</button>
+			<h1 class="section__title text">CONTACTS</h1>
+			<button class="button button--md button-dark">Road Town, British Virgin Islands</button>
 			<address class="address">
-				<p class="text">CRYPTOUNIT INC<br>ABM Chambers, P.O. BOX&nbsp;2283, Road&nbsp;Town, Tortola, VG1110, British&nbsp;Virgin&nbsp;Islands<br>2009699</p>
+				<p class="text">CRYPTOUNIT INC<br>ABM Chambers, P.O. BOX 2283, Road Town, Tortola, VG1110, British Virgin Islands<br>2009699</p>
 				<a href="mailto:info@cryptounit.cc" class="text address__email">info@cryptounit.cc</a>
 				<a href="tel:2009699" class="text address__phone">2009699</a>
 				<div class="links links--social">
@@ -372,7 +374,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<script src="js/jquery.formstyler.min.js"></script>
 	<script src="js/jquery.scrollify.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
-	<script src="js/app.min.js"></script>
+	<script src="js/fakescroll.min.js"></script>
+	<script src="js/app.js"></script>
+	<script>function openInNewTab(url) {var win = window.open(url, '_blank');win.focus();}</script>
 
 
 <!-- Google Tag Manager (noscript) -->

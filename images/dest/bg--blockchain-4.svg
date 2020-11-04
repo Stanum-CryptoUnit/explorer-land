@@ -1,1 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" fill="none"><circle cx="450" cy="450" r="430" opacity=".2" stroke="#daa236"><animate attributeName="r" begin="0s" dur="1s" repeatCount="indefinite" values="430;455;430"/></circle></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" fill="none"><circle cx="500" cy="500" r="430" opacity=".2" stroke="#daa236"><animate attributeName="r" begin="0s" dur="1.1s" repeatCount="indefinite" values="430;445;430"/></circle></svg>
